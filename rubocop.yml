@@ -1,4 +1,14 @@
+AllCops:
+  NewCops: enable
+  Exclude:
+    - "db/**/*"
+    - "bin/*" 
+    - "config/**/*"
+    - "Guardfile"
+    - "Rakefile"
+    - "node_modules/**/*"
 
+  DisplayCopNames: true
 
 Layout/LineLength:
   Max: 200
@@ -15,9 +25,10 @@ Metrics/AbcSize:
 Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
-  Exclude:
-    - db/schema.rb
-  Max: 50
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
 Style/EachForSimpleLoop:
@@ -46,7 +57,5 @@ Style/HashEachMethods:
 Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
-  Enabled: false
-Documentation:
   Enabled: false
 
