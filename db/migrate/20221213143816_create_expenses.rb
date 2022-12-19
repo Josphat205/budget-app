@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CreateExpenses < ActiveRecord::Migration[7.0]
+class CreateExpenses < ActiveRecord::Migration[7.0]  # :nodoc:
   def change
     create_table :expenses do |t|
       t.string :name
