@@ -14,4 +14,8 @@ RSpec.describe User, type: :model do
     @user.name = nil
     expect(@user).to_not be_valid
   end
+  it 'email should be present' do
+    @user.email = nil
+    expect(@user).to_not be_valid
+  end
 end
