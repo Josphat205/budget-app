@@ -1,9 +1,6 @@
 AllCops:
   NewCops: enable
   Exclude:
-    - "db/**/*"
-    - "bin/*" 
-    - "config/**/*"
     - "Guardfile"
     - "Rakefile"
     - "node_modules/**/*"
@@ -13,19 +10,19 @@ AllCops:
 Layout/LineLength:
   Max: 200
 Metrics/MethodLength:
-  Include:
-    - "app/controllers/*"
-    - "app/models/*"
   Max: 20
 Metrics/AbcSize:
-  Include:
-    - "app/controllers/*"
-    - "app/models/*"
   Max: 50
 Metrics/ClassLength:
   Max: 150
+Metrics/CyclomaticComplexity:
+  Max: 150
+Metrics/PerceivedComplexity:
+  Max: 150
 Metrics/BlockLength:
-  Enabled: false
+  IgnoredMethods: ['describe']
+  Max: 400
+
 
 Style/Documentation:
   Enabled: false
@@ -37,25 +34,35 @@ Style/AndOr:
   Enabled: false
 Style/DefWithParentheses:
   Enabled: false
+Style/GlobalStdStream:
+  Enabled: false
+Style/SpecialGlobalVars:
+  Enabled: false
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
-
 
 Layout/HashAlignment:
   EnforcedColonStyle: key
 Layout/ExtraSpacing:
   AllowForAlignment: false
+Layout/EndOfLine:
+  Enabled: false
 Layout/MultilineMethodCallIndentation:
   Enabled: true
   EnforcedStyle: indented
 Lint/RaiseException:
   Enabled: false
+Lint/EmptyFile:
+  Enabled: false
 Lint/StructNewOverride:
   Enabled: false
+Lint/ScriptPermission:
+  Enabled: false
 Style/HashEachMethods:
+  Enabled: false
+Style/RedundantFetchBlock:
   Enabled: false
 Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
-

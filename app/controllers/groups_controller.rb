@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class GroupsController < ApplicationController # :nodoc:
   before_action :authenticate_user!, except: [:index]
 

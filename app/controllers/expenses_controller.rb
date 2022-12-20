@@ -1,12 +1,10 @@
-# frozen_string_literal: true
-
 class ExpensesController < ApplicationController # :nodoc:
   before_action :authenticate_user!
   def new
     @expense = Expense.new
   end
 
-  def create # rubocop:disable Metrics/AbcSize
+  def create
     @groups = params[:expense][:group_id].drop(1)
     @groups.each do |group|
       @expense = Expense.new(name: params[:expense][:name], amount: params[:expense][:amount],
