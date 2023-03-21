@@ -1,6 +1,4 @@
-# frozen_string_literal: true
-
-class UsersController < ApplicationController
+class UsersController < ApplicationController # :nodoc:
   def index; end
 
   def new; end

@@ -1,11 +1,9 @@
-# frozen_string_literal: true
-
 Rails.application.routes.draw do
   devise_for :users
-  root "groups#index"
-  resources :groups, only: [:index, :show, :new, :create, :destroy] do
+  root 'groups#index'
+  resources :groups, only: %i[index show new create destroy] do
     resources :expenses, only: [:index]
   end
 
-  resources :expenses, only: [:new, :create, :destroy]
+  resources :expenses, only: %i[new create destroy]
 end
