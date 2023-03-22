@@ -23,7 +23,7 @@ class GroupsController < ApplicationController # :nodoc:
 
     render :new unless @group.save
 
-    redirect_to groups_path
+    redirect_to group_path(current_user), notice: 'Group created successfully'
   end
 
   private
