@@ -1,0 +1,2 @@
+module ExpensesHelper # :nodoc:
+end

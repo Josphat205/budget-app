@@ -1,0 +1,2 @@
+module GroupsHelper # :nodoc:
+end
