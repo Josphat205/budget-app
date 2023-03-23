@@ -189,7 +189,7 @@ If you like this project you can support me by reaching me through my social med
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank microverse and my group members for the support they gave me during project development
+_My acknoledgemet goes to [Gregoire Vella on Behance](https://www.behance.net/gregoirevella) - and the author[ author of the original design](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=). You can also acknoledge the designer [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/) if you wish._
 
 <!-- LICENSE -->
 
